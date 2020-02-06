@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>crazy stocks</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <audio src="" id="speaker"></audio>
+
+    <main>
+
+        <nav>
+            <span class="directions">
+                <span>b key = buy : </span>
+                <span>s key = sell</span>
+            </span>
+
+            <p>Market Price: $<span class="marketPrice"></span></p>
+            <p>Shares: <span class="shares"></span></p>
+            <p>Money: $<span class="money"></span></p>
+            <p>Round: <span class="level"></span></p>
+            <button onclick="start()">Play</button>
+
+            <span class="directions">
+                <span>(10 rounds in total)</span>
+            </span>
+        </nav>
+
+        <section id="graphContainer">
+            <canvas id="graph"></canvas>
+        </section>
+
+        <section id="popup">
+            <div>
+                <h1>YOUR SCORE: <span class="money"></span></h1>
+                <h1>MAX SCORE: <span class="max"></span></h1>
+                <img src="https://media.giphy.com/media/YnkMcHgNIMW4Yfmjxr/giphy.gif">
+                <button onclick="reset()">again</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
